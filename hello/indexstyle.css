@@ -17,3 +17,14 @@ h1 {
 p {
 	font-size: 80%;
 }
+
+
+a {
+	text-decoration: none;
+	font-weight: bold; 
+	color: #00CFCF;
+}
+
+a:visited {
+	color: #009E9E;
+}
