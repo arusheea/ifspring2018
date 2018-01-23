@@ -1,0 +1,34 @@
+body {
+	margin: 100px 12%;
+	font-family: garamond;
+	font-size: 80%;
+	text-transform: lowercase;
+	background-color: #2A2826;
+	color: #EEEEEE;
+}
+
+h1 {
+	font-size: 120%;
+}
+
+ol li {
+	margin-top: 10px;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul li {
+	margin-top: 0px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold; 
+	color: #00CFCF;
+}
+
+a:visited {
+	color: #009E9E;
+}
