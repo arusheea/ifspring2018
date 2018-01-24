@@ -1,0 +1,62 @@
+body {
+	font-family: garamond;
+	width: 80%;
+	margin: 50px auto;
+	background-color: #2A2826;
+	color: #EEEEEE;
+}
+
+h1 {
+	font-size: 170%;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+h3 {
+	font-size: 140%;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+ul {
+	list-style-type: none;
+	font-size: 80%;
+	text-indent: -40px;
+	margin: 30px auto;
+}
+
+li {
+	margin: 8px auto;
+}
+
+b {
+	color: #CCCCCC;
+	display: inline-block;
+	width: 100px;
+}
+
+.five {
+	color: #008080;
+}
+
+.two {
+	color: #00a7a7;
+}
+
+.one {
+	color: #00c1c1;
+}
+
+.three {
+	color: #008e8e;
+}
+
+.four {
+	color: #00a7a7;
+}
+
+.desc {
+	color: #999999;
+	text-indent: -80px;
+	text-transform: lowercase;
+}
