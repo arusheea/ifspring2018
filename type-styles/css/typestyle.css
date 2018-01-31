@@ -1,0 +1,99 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+div.properties, div#intro {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 100px;
+}
+
+#intro p {
+	font-size: 18px;
+	color: #AAAAAA;
+}
+
+div#intro {
+	padding-bottom: 40px;
+	padding-top: 20px;
+	background-color: black;
+	color: white;
+}
+
+.desc {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #AAAAAA;
+}
+
+h1 {
+	margin: 10px auto;
+}
+
+h2 {
+	margin: 10px auto;
+	color: #AAAAAA;
+}
+
+#normal {
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#bold {
+	font-weight: bold;
+}
+
+#italic {
+	font-style: italic;
+}
+
+#ls3 {
+	letter-spacing: 0.3em;
+}
+
+#lsminus06 {
+	letter-spacing: -0.06em;
+}
+
+#underline {
+	text-decoration: underline;
+}
+
+#linethru {
+	text-decoration: line-through;
+}
+
+#overline {
+	text-decoration: overline;
+}
+
+#uppercase {
+	text-transform: uppercase;
+}
+
+#lowercase {
+	text-transform: lowercase;
+}
+
+#capitalize {
+	text-transform: capitalize;
+}
+
+div.properties {
+	margin: 40px auto;
+}
+
+div.subsect {
+	margin: 10px auto;
+}
+
+hr {
+	margin: 0px auto;
+}
