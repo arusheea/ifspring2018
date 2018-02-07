@@ -1,0 +1,104 @@
+body {
+	font-family: garamond;
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.lyric-block {
+	width: 80%;
+	margin: 20px auto;
+	display: inline-block;
+	text-align: left;
+}
+
+.cover-art {
+	width: 200px;
+	padding-right: 50px;
+	float: left;
+	display: block;
+}
+
+.song-info {
+	display: block;
+	float: left;
+	text-align: left;
+	padding: 10px;
+}
+
+#blank{
+	height: 220px;
+}
+
+#title-block {
+	font-family: 'Dhurjati', monospace; 
+	display: block;
+	color: white;
+	float: left;
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+	vertical-align: text-bottom;
+	background-color: #111111;
+	position: fixed;
+}
+
+audio {
+	margin: 0px 0px;
+	width: 100%;
+}
+
+#video-embed {
+	height: 200px;
+	width: 25%;
+	background-image: url(http://bestfan.com/blog/wp-content/uploads/2017/12/giphy-1.gif);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	float: right;
+}
+
+h1 {
+	font-size: 200%;
+	margin: 0;
+	text-align: left;
+	color: white;
+	padding: 0;
+	color: #f3101f;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.chorus {
+	font-style: oblique;
+}
+
+span.who {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	display: block;
+	width: 100%;
+	font-family: 'Dhurjati', monospace;
+	font-size: 22px;
+}
+
+a {
+	color: #f3101f;
+	text-decoration: none;
+}
+
+#closing-block {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto 0px auto;
+	padding: 20px auto;
+	background-color: black;
+	color: white;
+	font-family: 'Dhurjati', monospace;
+	font-size: 22px;
+}
