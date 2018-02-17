@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Buttons &mdash; James Fawcett</title>
+		<title>Buttons &mdash; Arushee Agrawal</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -16,6 +16,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mr+Bedfort" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
 		<style>
@@ -497,18 +498,24 @@
 			a#btn_nike {
 				text-decoration: none;
 				margin: 0 auto;
-				margin-top: 80px;
+				margin-top: 45px;
 				display: block;
+				width: 140px;
+				height: 140px;
+				background-color: white;
+				border-radius: 50%;
+				transition: background-color 1s;
 			}
 
 			a#btn_nike img {
 				width: 140px;
 				margin-top: -70px;
+				filter: invert(0%);
+				transition: filter 1s;
 			}
 
 			a#btn_nike:hover {
-				animation: nike_anim_tick 1s;
-				margin-top: 100px;
+				background-color: black;
 			}
 
 			@keyframes nike_anim {
@@ -516,27 +523,27 @@
 				100% {opacity: 1;}
 			}
 
-			@keyframes nike_anim_tick {
-				0% {margin-top: 80px;}
-				100% {margin-top: 100px;}
-			}
-
 			a#btn_nike:hover #nike_words {
 				animation: nike_anim 1s;
 				opacity:1;
 			}
 
+			a#btn_nike:hover img {
+				filter: invert(100%);
+			}	
+
 			a#btn_nike #nike_words {
 				display: block;
 				margin: 0;
 				margin-left: -8px;
+				padding-top: 40px;
 				text-transform: uppercase;
 				font-style: oblique;
 				font-weight: 900;
 				font-family: 'Source Sans Pro', sans-serif;
 				letter-spacing: -5px;
 				font-size: 45px;
-				color: black;
+				color: white;
 				opacity: 0;
 			}
 
@@ -773,6 +780,77 @@
 			a#btn_tts:hover img {
 				filter: invert(100%) grayscale(100%) brightness(200%);
 			}
+
+			a#btn_ff {
+				display: inline-block;
+				color: white;
+				margin: 0 auto;
+				margin-top: 90px;
+				padding-top: 5px;
+				text-decoration: none;
+				font-size: 40px;
+				width: 60px;
+				height: 55px;
+				border-radius: 30px;
+				background-color: black;
+				transition: width 1s;
+			}
+
+			a#btn_ff:hover {
+				width: 190px;
+				background-color: #3498DC;
+			}
+
+			a#btn_ff i {
+				float: left;
+				padding-top: 8px;
+				padding-left: 15px;
+				transition: all 1s;
+			}
+
+			a#btn_ff:hover i {
+				padding-left: 15px;
+				padding-top: 15px;
+				transform: rotateZ(-45deg);
+			}
+
+			#ff {
+				display: inline-block;
+				opacity: 0;
+				color: white;
+				font-size: 25px;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 500;
+				float: right;
+				padding-right: 15px;
+				padding-top: 10px;
+				transition: opacity 1s;
+			}
+
+			a#btn_ff:hover #ff {
+				opacity: 1;
+			}
+
+			a#btn_pm {
+				display: block;
+				color: white;
+				margin: 0 auto;
+				margin-top: 100px;
+				text-decoration: none;
+				font-size: 30px;
+				padding-top: 10px;
+				width: 180px;
+				height: 50px;
+				border-radius: 20px;
+				background-color: black;
+				font-family: 'Mr Bedfort', sans-serif;
+				text-transform: capitalize;
+			}
+
+			a#btn_pm:hover {
+				background-image: url("https://im-01.gifer.com/3sjl.gif");
+				background-size: 70%;
+			}
  		</style>
 	</head>
 	<body>
@@ -810,7 +888,7 @@
 			</div>
 
 			<div class="button_container">
-				<a href="http://www.thecolorrun.com" target="_blank" id="btn_colorrun"><span id="pink">the</span> <span id="yellow">color</span> <span id="blue">run</span></a>
+				<a href="http://www.cartoonnetwork.com" target="_blank" id="btn_cn"><div id="c"><span class="let">c</span></div><div id="n"><span class="let">n</span></div></a>
 			</div>
 
 			<div class="button_container">
@@ -830,7 +908,7 @@
 			</div>
 
 			<div class="button_container">
-				<a href="http://www.cartoonnetwork.com" target="_blank" id="btn_cn"><div id="c"><span class="let">c</span></div><div id="n"><span class="let">n</span></div></a>
+				<a href="http://www.thecolorrun.com" target="_blank" id="btn_colorrun"><span id="pink">the</span> <span id="yellow">color</span> <span id="blue">run</span></a>
 			</div>
 
 			<div class="button_container">
@@ -843,6 +921,10 @@
 
 			<div class="button_container">
 				<a href="https://www.lyft.com/" target="_blank" id="btn_lyft">lyft</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.pottermore.com/" target="_blank" id="btn_pm">pottermore</a>
 			</div>
 
 			<div class="button_container">
@@ -871,6 +953,10 @@
 			<a href="https://www.nbc.com/the-tonight-show" target="_blank" id="btn_tts">
 			    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_Tonight_Show_Starring_Jimmy_Fallon.svg/2000px-The_Tonight_Show_Starring_Jimmy_Fallon.svg.png">
 			</a></div>
+
+			<div class="button_container">
+				<a href="https://www.foreflight.com/" target="_blank" id="btn_ff"><i class="fa fa-plane" aria-hidden="true"></i><span id="ff">ForeFlight</span></a>
+			</div>
 		</div>	
 
 	</body>
