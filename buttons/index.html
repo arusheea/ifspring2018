@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons &mdash; James Fawcett</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			#main_content {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+
+
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: #2ebfec; /* Old browsers */
+				background: -moz-linear-gradient(top,  #2ebfec 0%, #28a5cb 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2ebfec), color-stop(100%,#28a5cb)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #2ebfec 0%,#28a5cb 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #2ebfec 0%,#28a5cb 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #2ebfec 0%,#28a5cb 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #2ebfec 0%,#28a5cb 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=0 ); /* IE6-9 */
+			}
+
+
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+
+			a#btn_indiegogo {
+				display: inline-block;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+				background-color: #eb1478;
+			}
+
+			a#btn_old_navy {
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #043862;
+				margin: auto;
+				display: inline-block;
+				width: 170px;
+				height: 50px;
+				padding-top: 10px;
+				border-radius: 85px / 30px;
+				margin-top: 100px;
+				letter-spacing: -1px;
+			}
+
+			a#btn_old_navy:hover {
+				color: white;
+				background-color: #043862;
+			}
+
+			a#btn_apple {
+				display: block;
+				width: 100px;
+				height: 100px;
+				margin: auto;
+				margin-top: 65px;
+				color: black;
+				font-size: 80px;
+				text-decoration: none;
+			}
+
+			@keyframes apple_anim {
+				0% {color: black;}
+				100% {color: rgb(175, 175, 175);}
+			}
+
+			a#btn_apple:hover {
+				animation-name: apple_anim;
+				animation-duration: 2s;
+				color: rgb(175,175,175); 
+			}
+
+			a#btn_tny {
+				display: inline-block;
+				margin: 0 auto;
+				margin-top: 100px;
+			}
+
+			#btn_tny img#logo {
+				height: 50px;
+			}
+
+			#btn_tny img#words {
+				width: 140px;
+				opacity: none;
+				display: none;
+			}
+
+			@keyframes tny_anim {
+				0% {display: none; width: 0px; opacity: 0;}
+				50% {display: inline-block; width: 140px; opacity: 0;}
+				100% {display: inline-block; width: 140px; opacity: 1;}
+			}
+
+			#btn_tny:hover img#words {
+				animation-name: tny_anim;
+				animation-duration: 2s;
+				display: inline-block;
+				width: 140px;
+				opacity: 1;
+			}
+
+			a#btn_colorrun {
+				display: block;
+				margin: 0 auto;
+				margin-top: 100px;
+				text-transform: uppercase;
+				font-family: 'Fjalla One', sans-serif;
+				text-decoration: none;
+				font-size: 40px;
+				letter-spacing: -2px;
+			}
+
+			@keyframes rotate_1 {
+				0% {color: #E9168C;}
+				32% {color: #E9168C;}
+				33% {color: #1DAFEC;}
+				65% {color: #1DAFEC;}
+				66% {color: #FEF035;}
+				99% {color: #FEF035;}
+				100% {color: #E9168C;}
+			}
+
+			@keyframes rotate_2 {
+				0% {color: #FEF035;}
+				32% {color: #FEF035;}
+				33% {color: #E9168C;}
+				65% {color: #E9168C;}
+				66% {color: #1DAFEC;}
+				99% {color: #1DAFEC;}
+				100% {color: #FEF035;}
+			}
+
+			@keyframes rotate_3 {
+				0% {color: #1DAFEC;}
+				32% {color: #1DAFEC;}
+				33% {color: #FEF035;}
+				65% {color: #FEF035;}
+				66% {color: #E9168C;}
+				99% {color: #E9168C;}
+				100% {color: #1DAFEC;}
+			}
+
+			#pink {
+				color: #E9168C;
+			}
+
+			#yellow {
+				color: #FEF035;
+			}
+
+			#blue {
+				color: #1DAFEC;
+			}
+
+			#btn_colorrun:hover #pink {
+				animation: rotate_1 3s infinite;
+			}
+
+			#btn_colorrun:hover #yellow {
+				animation: rotate_2 3s infinite;
+			}
+
+			#btn_colorrun:hover #blue {
+				animation: rotate_3 3s infinite;
+			}
+
+			a#btn_fb {
+				margin: 0 auto;
+				margin-top: 90px;
+				font-size: 60px;
+				text-decoration: none;
+				color: white;
+				display: block;
+				text-align: right;
+				width: 60px;
+				height: 70px;
+				padding-right: 10px;
+				border-radius: 7px;
+				background-color: #4468B0;
+			}
+
+			a#btn_fb:hover {
+				margin: 0 auto;
+				margin-top: 90px;
+				font-size: 60px;
+				text-decoration: none;
+				color: #4468B0;
+				display: block;
+				text-align: right;
+				width: 60px;
+				height: 70px;
+				padding-right: 10px;
+				border-radius: 7px;
+				background-color: white;
+				border: 3px solid #4468B0;
+			}
+
+			a#btn_mk {
+				display: inline-block;
+				margin: 0 auto;
+				margin-top: 100px;
+				font-size: 33px;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: black;
+				letter-spacing: -8px;
+			}
+
+			a#btn_mk .hide {
+				display: none;
+				opacity: 0;
+				font-size: 0px;
+			}
+
+			@keyframes mk_anim {
+				0% {letter-spacing: -8px;}
+				100% {letter-spacing: 0px;}
+			}
+
+			a#btn_mk:hover {
+				animation-name: mk_anim;
+				animation-duration: 2s;
+				letter-spacing: 0px;
+			}
+
+			@keyframes mk_1_anim {
+				0% {display: none; font-size: 0px; opacity: 0;}
+				70% {display: inline-block; font-size: 33px; opacity: 0;}
+				100% {display: inline-block; font-size:33px; opacity: 1;}
+			}
+
+			a#btn_mk:hover .hide {
+				animation-name: mk_1_anim;
+				animation-duration: 2s;
+				opacity: 1;
+				font-size: 33px;
+				display: inline-block;
+			}
+
+			a#btn_hsn {
+				display: block;
+				height: 57px;
+				width: 80px;
+				border-radius: 40px;
+				color: white;
+				font-family: 'Arimo', sans-serif;
+				font-size: 32px;
+				text-transform: uppercase;
+				background-color: #1278C5;
+				text-decoration: none;
+				padding-top: 23px;
+				margin: 0 auto;
+				margin-top: 80px;
+			}
+
+			a#btn_hsn:hover {
+				color: #1278C5;
+				background-color: white;
+				border: 2px solid #1278C5;
+				border-radius: 42px;
+			}
+
+			a#btn_smsng #samsung {
+				margin-left: -25px;
+				width: 250px;
+				margin-top: -11px;
+			}
+
+			a#btn_smsng {
+				display: block;
+				background-color: #172E9D;
+				height: 60px;
+				margin: 0 auto;
+				margin-top: 80px;
+				width: 200px;
+				border-radius: 100% 38%;
+			}
+
+			@keyframes smsng_anim {
+				0% {border-radius: 100% 38%;}
+				50% {border-radius: 38% 100%;}
+				100% {border-radius: 100% 38%;}
+			}
+
+			a#btn_smsng:hover {
+				animation: smsng_anim 1s infinite;
+			}
+
+			a#btn_cn {
+				display: block;
+				margin: 0 auto;
+				margin-top: 100px;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 900;
+				font-size: 70px;
+				height: 70px;
+			}
+
+			a#btn_cn div {
+				width: 60px;
+				height: 60px;
+				display: inline-block;
+			}
+
+			a#btn_cn .let {
+				margin-top: -12px;
+				float: top;
+				display: block;
+				position: relative;
+			}
+
+			a#btn_cn #c {
+				color: white;
+				background-color: black;
+			}
+
+			a#btn_cn #n {
+				color: black;
+				background-color: white;
+			}
+
+			@keyframes c_anim {
+				0% {color: white;
+				background-color: black;}
+				49% {color: white;
+				background-color: black;}
+				50% {color: black;
+				background-color: white;}
+				99% {color: black;
+				background-color: white;}
+				100% {color: white;
+				background-color: black;}
+			}
+
+			@keyframes n_anim {
+				0% {color: black;
+				background-color: white;}
+				49% {color: black;
+				background-color: white;}
+				50% {color: white;
+				background-color: black;}
+				99% {color: white;
+				background-color: black;}
+				100% {color: black;
+				background-color: white;}
+			}
+
+			a#btn_cn:hover #c {
+				animation: c_anim 1s infinite;
+			}
+
+			a#btn_cn:hover #n {
+				animation: n_anim 1s infinite;
+			}
+
+			a#btn_insta {
+				text-decoration: none;
+				margin: 0 auto;
+				margin-top: 90px;
+				color: black;
+				border-radius: 20px;
+				display: block;
+				height: 100px;
+				width: 100px;
+				font-size: 70px;
+			}
+
+			a#btn_insta:hover {
+				background-image: url(https://pre00.deviantart.net/a21f/th/pre/i/2017/070/5/e/instagram_logo_gradient_rainbow_by_projectowl-db1xp40.jpg);
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: white;
+			}
+
+			a#btn_nike {
+				text-decoration: none;
+				margin: 0 auto;
+				margin-top: 80px;
+				display: block;
+			}
+
+			a#btn_nike img {
+				width: 140px;
+				margin-top: -70px;
+			}
+
+			a#btn_nike:hover {
+				animation: nike_anim_tick 1s;
+				margin-top: 100px;
+			}
+
+			@keyframes nike_anim {
+				0% {opacity: 0;}
+				100% {opacity: 1;}
+			}
+
+			@keyframes nike_anim_tick {
+				0% {margin-top: 80px;}
+				100% {margin-top: 100px;}
+			}
+
+			a#btn_nike:hover #nike_words {
+				animation: nike_anim 1s;
+				opacity:1;
+			}
+
+			a#btn_nike #nike_words {
+				display: block;
+				margin: 0;
+				margin-left: -8px;
+				text-transform: uppercase;
+				font-style: oblique;
+				font-weight: 900;
+				font-family: 'Source Sans Pro', sans-serif;
+				letter-spacing: -5px;
+				font-size: 45px;
+				color: black;
+				opacity: 0;
+			}
+
+			a#btn_lyft {
+				display: block;
+				text-decoration: none;
+				color: white;
+				margin: 0 auto;
+				margin-top: 100px;
+				background-color: rgb(249, 31, 191);
+				font-weight: bold;
+				font-family: 'Righteous', sans-serif;
+				width: 150px;
+				font-size: 35px;
+				padding-top: 10px;
+				height: 50px;
+				border-radius: 30px;
+			}
+
+			a#btn_lyft:hover {
+				background: rgb(249,31,191); /* Old browsers */
+				background: -moz-linear-gradient(top, rgba(249,31,191,1) 0%, rgba(119,53,160,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(249,31,191,1) 0%,rgba(119,53,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(249,31,191,1) 0%,rgba(119,53,160,1) 100%);
+			}
+
+			a#btn_ibm {
+				display: block;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: black;
+				font-size: 72px;
+				margin: 0 auto;
+				margin-top: 90px;
+				font-family: 'Bree Serif', serif;
+				font-weight: bold;
+			}
+
+			a#btn_ibm:hover {
+				color: #236CB0;
+			}
+
+			a#btn_ibm #stripes {
+				display: none;
+				height: 70px;
+				width: 100%;
+				margin-top: -24px;
+				position: relative;
+			}
+
+			a#btn_ibm div {
+				height: 3px;
+				margin-bottom: 1px;
+				background-color: white;
+				width: 100%;
+				margin-top: -11px;
+			}
+
+			a#btn_ibm:hover #stripes {
+				display: block;
+			}
+ 		</style>
+	</head>
+	<body>
+		
+		<div id="main_content">
+
+			<h1>Button Styling &mdash; Arushee Agrawal</h1>
+			
+			<div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fa fa-amazon"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo">indiegogo</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://oldnavy.gap.com/" target="_blank" id="btn_old_navy">old navy</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.apple.com" target="_blank" id="btn_apple"><i class="fa fa-apple" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.newyorker.com/" target="_blank" id="btn_tny"><img id="logo" src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/a2/0a/e2/a20ae220-b24c-1b46-d4d3-c363c29233e8/mzl.kkykzwco.png/1200x630bb.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/The_New_Yorker.svg/2000px-The_New_Yorker.svg.png" id="words"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.thecolorrun.com" target="_blank" id="btn_colorrun"><span id="pink">the</span> <span id="yellow">color</span> <span id="blue">run</span></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.facebook.com" target="_blank" id="btn_fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.michaelkors.com" target="_blank" id="btn_mk">m<span class="hide">ichael</span> k<span class="hide">ors</span></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.hsn.com" target="_blank" id="btn_hsn">hsn</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.samsung.com" target="_blank" id="btn_smsng"><img id="samsung" src="http://fardamento.netshoes.net/BR/LNetshoes/production/20160320/SPONSOR/20160320SPONSOR0763643.png"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.cartoonnetwork.com" target="_blank" id="btn_cn"><div id="c"><span class="let">c</span></div><div id="n"><span class="let">n</span></div></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://instagram.com/" target="_blank" id="btn_insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.nike.com/us/en_us/" target="_blank" id="btn_nike"><span id="nike_words">nike</span><img src="http://www.pngmart.com/files/3/Nike-Logo-Transparent-PNG.png"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.lyft.com/" target="_blank" id="btn_lyft">lyft</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.ibm.com/us-en/" target="_blank" id="btn_ibm">ibm<span id="stripes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></span></a>
+			</div>
+		</div>	
+
+	</body>
+</html>
