@@ -13,6 +13,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
 		<style>
@@ -564,16 +567,12 @@
 				display: block;
 				text-transform: uppercase;
 				text-decoration: none;
-				color: black;
+				color: #236CB0;
 				font-size: 72px;
 				margin: 0 auto;
 				margin-top: 90px;
 				font-family: 'Bree Serif', serif;
 				font-weight: bold;
-			}
-
-			a#btn_ibm:hover {
-				color: #236CB0;
 			}
 
 			a#btn_ibm #stripes {
@@ -594,6 +593,185 @@
 
 			a#btn_ibm:hover #stripes {
 				display: block;
+			}
+
+			a#btn_sardella {
+				display: block;
+				text-transform: uppercase;
+				margin: 0 auto;
+				margin-top: 100px;
+				font-size: 40px;
+				text-decoration: none;
+				color: #0D1CC1;
+				font-family: 'Pathway Gothic One', sans-serif;
+				letter-spacing: -2px;
+				width: 70px;
+				height: 60px;
+				padding-top: 10px;
+				border-radius: 35px;
+				background-color: #2BFECF; 
+				text-shadow: 2px 2px 0px white;
+			}
+
+			#hide_sar {
+				padding-left: 10px;
+				opacity: 0;
+				display: none;
+				width: 0px;
+			}
+
+			@keyframes sar_anim {
+				0% {width: 70px;}
+				100% {width: 220px;}
+			}
+
+			a#btn_sardella:hover {
+				animation: sar_anim 1s;
+				width: 220px;
+			}
+
+			@keyframes sar_anim_w {
+				0% {display: none; width: 0px; opacity: 0;}
+				70% {display: inline-block; width: 120px; opacity: 0;}
+				100% {display: inline-block; width: 120px; opacity: 1;}
+			}
+
+			a#btn_sardella:hover #hide_sar {
+				animation: sar_anim_w 2s;
+				display: inline-block;
+				width: 120px; 
+				opacity: 1;
+			}
+
+			a#btn_biss {
+				display: block;
+				font-family: 'UnifrakturMaguntia', sans-serif;
+				text-decoration: none;
+				color: #A01F25;
+				margin: 0 auto;
+				margin-top: 70px;
+				font-size: 40px;
+				width: 220px;
+				padding-top: 30px;
+				height: 70px;
+				border-radius: 100px;
+				border-bottom: 4px solid black;
+				border-top: 4px solid black;
+			}
+
+			a#btn_biss:hover {
+				border-bottom: 4px solid #FDC23B;
+				border-top: 4px solid #FDC23B;
+				background-color: #A01F25;
+				color: #FDC23B;
+			}
+
+			a#btn_army {
+				display: block;
+				margin: 0 auto;
+				margin-top: 80px;
+				font-size: 60px;
+				text-decoration: none;
+				color: black;
+				background-color: black;
+				width: 95px;
+				height: 95px;
+				border-radius: 10px;
+				border: 4px solid #FDC23B;
+				transition: height 1s;
+			}
+
+			a#btn_army #back {
+				font-size: 70px;
+				color: #FDC23B;
+				display: block;
+			}
+
+			a#btn_army #front {
+				font-size: 38px;
+				margin-top: -73px;
+				color: white;
+				display: block;
+			}
+
+			a#btn_army #name {
+				color: white;
+				text-transform: uppercase;
+				font-family: 'Anton', sans-serif;
+				font-size: 20px;
+				opacity: 0;
+				padding-top: 16px;
+				transition: opacity 2s;
+			}
+
+			a#btn_army:hover {
+				height: 120px;
+			}
+
+			a#btn_army:hover #name{
+				display: block;
+				opacity: 1;
+			}
+
+			a#btn_craigslist {
+				display: block;
+				font-family: serif;
+				text-decoration: none;
+				text-transform: lowercase;
+				margin: 0 auto;
+				margin-top: 100px;
+				font-size: 50px;
+				width: 200px;
+				height: 100px;
+				color: #0921EA;
+			}
+
+			a#btn_craigslist:hover {
+				color: #7E0F7E;
+			}
+
+			a#btn_craigslist #under {
+				margin: 0 auto;
+				margin-top: -10px;
+				text-align: center;
+				display: block;
+				background-color: #7E0F7E;
+				height: 2px;
+				width: 0%;
+			}
+
+			@keyframes underline_anim {
+				0% {width: 0%;}
+				100% {width: 98%;}
+			}
+
+			a#btn_craigslist:hover #under {
+				animation: underline_anim 1s;
+				color: #7E0F7E;
+				height: 4px;
+				width: 100%;
+			}
+
+			a#btn_tts {
+				display: block;
+				width: 120px;
+				height: 120px;
+				margin: 0 auto;
+				margin-top: 70px;
+			}
+
+			a#btn_tts img {
+				filter: grayscale();
+				height: 120px;
+			}
+
+			a#btn_tts:hover {
+				border: 2px solid black;
+				border-radius: 50%;
+			}
+
+			a#btn_tts:hover img {
+				filter: invert(100%) grayscale(100%) brightness(200%);
 			}
  		</style>
 	</head>
@@ -670,6 +848,29 @@
 			<div class="button_container">
 				<a href="https://www.ibm.com/us-en/" target="_blank" id="btn_ibm">ibm<span id="stripes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></span></a>
 			</div>
+
+			<div class="button_container">
+				<a href="https://sardellastl.com/" target="_blank" id="btn_sardella"><i class="fa fa-cutlery" aria-hidden="true"></i> <span id="hide_sar">sardella</span></a>
+			</div>
+
+			<div class="button_container">
+			<a href="https://www.bissingers.com/" target="_blank" id="btn_biss">
+			     Bissinger's
+			</a></div>
+
+			<div class="button_container">
+				<a href="https://www.army.mil/" target="_blank" id="btn_army"><span id="back"><i class="fa fa-star-o" aria-hidden="true"></i></span><span id="front"><i class="fa fa-star" aria-hidden="true"></i></span><span id="name">u.s.army</span></a>
+			</div>
+
+			<div class="button_container">
+			<a href="https://stlouis.craigslist.org/" target="_blank" id="btn_craigslist">
+			    craigslist<span id="under"></span>
+			</a></div>
+
+			<div class="button_container">
+			<a href="https://www.nbc.com/the-tonight-show" target="_blank" id="btn_tts">
+			    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_Tonight_Show_Starring_Jimmy_Fallon.svg/2000px-The_Tonight_Show_Starring_Jimmy_Fallon.svg.png">
+			</a></div>
 		</div>	
 
 	</body>
