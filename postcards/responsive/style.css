@@ -120,10 +120,6 @@ a#nextpage {
 	z-index: 20;
 }
 
-@media screen and (max-width: 1024px) {
-	#card1 {background-size: 133% auto; background-position: 30% 0%;}
-}
-
 @media screen and (max-width: 480px) {
 	.quote#one {right: 30%;}
 }
