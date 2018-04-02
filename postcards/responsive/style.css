@@ -45,40 +45,40 @@ body {
 }
 
 .quote {
+	position: fixed;
 	z-index: 10;
 	color: rgb(168, 223, 48);
 	font-family: "oswald", sans-serif;
-	font-size: 1.75em;
+	font-size: 2.8vw;
 	font-style: normal;
-	line-height: 35px;
+	line-height: 3.5vw;
 	font-weight: 400;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
-	text-shadow: 2px 2px 3px black;
+	text-shadow: 3px 3px 3px black;
 }
 
 .quote#one {
-	position: absolute;
+	text-align: right;
 	bottom: 7vw;
 	right: 7vw;
+	width: 20%;
 }
 
 .quote#two {
-	position: absolute;
 	top: 7vw;
 	right: 7vw;
-	width: 350px;
+	width: 40%;
 }
 
 .quote#three {
-	position: absolute;
 	top: 7vw;
 	left: 7vw;
+	width: 40%;
 }
 
 div#quote1 {
 	float: right;
-	text-align: right;
 	width: 100%;
 }
 
@@ -96,17 +96,27 @@ div #quote3 {
 
 div.wtnv {
 	display: block;
-	float: right;
-	margin-top: 25px;
 	font-weight: 300;
 	text-transform: none;
 	font-size: 0.75em;
-	line-height: 25px;
-	text-align: center;
+}
+
+#blank {
+	height: 25px;
+	display: block;
+	width: 100%;
 }
 
 #three div.wtnv {
 	float: left;
+}
+
+#two div.wtnv {
+	float: right;
+}
+
+#one div.wtnv {
+	float: right;
 }
 
 a#nextpage {
@@ -120,6 +130,47 @@ a#nextpage {
 	z-index: 20;
 }
 
+@media screen and (max-width: 1024px) {
+	.quote {font-size: 3.5vw; line-height: 4.2vw;}
+	#card1 {background-position: 30% 0%;}
+	.quote#one {width: 30%; bottom: 10vw; right: 10vw;}
+	.quote#two {width: 50%; top: 10vw; right: 10vw;}
+	.quote#three {width: 40%; top: 10vw; left: 10vw;}
+}
+
+@media screen and (max-device-width: 680px) {
+	.quote {font-size: 4vw; line-height: 4.5vw;}
+	.quote#one {width: 30%;  bottom: 10vw; right: 10vw;}
+	.quote#two {width: 55%; top: 10vw; right: 10vw;}
+	.quote#three {width: 50%; top: 10vw; left: 10vw;}
+}
+
 @media screen and (max-width: 480px) {
-	.quote#one {right: 30%;}
+	.quote {font-size: 6vw; line-height: 7.2vw;}
+	#one div.wtnv {float: none;}
+	.quote#one {right: 22.5%; text-align: center; width: 55%;}
+	.quote#two {width: 78%; top: 10vw; right: 10vw;}
+	.quote#three {width: 60%; top: 10vw; left: 10vw;}
+}
+
+@media screen and (max-device-width: 1200px) {
+	.quote {font-size: 3.5vw; line-height: 4.2vw;}
+	.quote#one {width: 30%;  bottom: 10vw; right: 10vw;}
+	.quote#two {width: 45%; top: 10vw; right: 10vw;}
+	.quote#three {width: 50%; top: 10vw; left: 10vw;}
+}
+
+@media screen and (max-device-width: 680px) {
+	.quote {font-size: 4vw; line-height: 4.5vw;}
+	.quote#one {width: 30%;  bottom: 10vw; right: 10vw;}
+	.quote#two {width: 55%; top: 10vw; right: 10vw;}
+	.quote#three {width: 50%; top: 10vw; left: 10vw;}
+}
+
+@media screen and (max-device-width: 480px) {
+	.quote {font-size: 6vw; line-height: 7.2vw;}
+	#one div.wtnv {float: none;}
+	.quote#one {right: 22.5%; text-align: center; width: 55%;}
+	.quote#two {width: 76%; top: 10vw; right: 10vw;}
+	.quote#three {width: 60%; top: 10vw; left: 10vw;}
 }
