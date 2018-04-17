@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.typekit.net/eqc1vea.css">
 	<link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600" rel="stylesheet">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style type="text/css">
 		body {
@@ -192,7 +193,7 @@
 		<span class="outer">
 		<a href="#what-is-kony" class="nav-button active" id="num1"><span>WHAT IS KONY 2012?</span></a><div class="right-arrow active" id="arr-what-is-kony"></div>
 		<a href="#ww-reception" class="nav-button" id="num2"><span>WORLD-WIDE RECEPTION</span></a><div class="right-arrow" id="arr-ww-reception"></div>
-		<a href="#where-did-it-go" class="nav-button" id="num3"><span>WHERE DID IT GO?</span></a><div class="right-arrow" id="arr-where-did-it-go"></div>
+		<a href="#where-did-it-go" class="nav-button" id="num4"><span>WHERE DID IT GO?</span></a><div class="right-arrow" id="arr-where-did-it-go"></div>
 		<a href="https://vimeo.com/37119711" class="nav-button"><span>WATCH THE VIDEO</span></a>
 		</span>
 	</div>
@@ -240,7 +241,7 @@
 			<hr>
 			<h2>VIRALITY OF THE MOVEMENT</h2>
 			<p>In under a week, the video created by Invisible Children, Kony 2012 had been viewed over 100 million times. Time magazine credits Invisible Children's strong base of followers on Facebook, YouTube and Twitter. Unlike other videos that accidentally "go viral", Kony 2012 was created to elicit emotional responses and encourage viewers to share the footage and spread the hashtag. Viewers did such a good job sharing it, they attracted the attention of celebrities like Oprah Winfrey, Rihanna, Bill Gates, Ryan Seacrest, Justin Bieber, and Kim Kardashian-West. Although the video was so popular, not all the interactions were positive. But the more criticism the video drew, the more people watched it and shared it so that they could be a part of the conversation. Their Public Relations team was not ready for the over night fame and failed to control the narrative of the fall out.
-			</p><p>
+			</p><div id="map"></div><p>
 			Forbes gives a breakdown of 12 reasons why the video went so viral. They cite that the video invoked positive feelings, grabbed viewers attention, made it personal, referenced mainstream media, pulled on the heartstrings, conveyed immediacy, made it simple, made it real, gave it a scale, used celebrities, created events, and made it easy to get involved. These 12 basic tactics affected viewers so much so that the Kony 2012 campaign sold out of merchandise when their two interns could not keep up with the hundreds of thousands of action kits supporters could buy. Jason Russel told Business Insider, "We sourced every single red T-shirt in the entire US. There were no more to buy." The google trends for searches like "Joseph Kony" and "Kony 2012" all show flatlines until the video was released where the spike reaches all the way to 100%. Before Invisible Children released the video, Joseph Kony and the LRA were mostly unknown to America and the rest of the world.</p>
 			<hr>
 			<h2>FEEDBACK</h2>
@@ -273,6 +274,7 @@
 		<section id="where-did-it-go">
 			<h1>WHERE DID IT GO?</h1>
 			<p>The fame of director Jason Russell's 30-minute documentary was short-lived. After becoming the fastest video in history to have reached 100 million views,the popularity of the video dwindled—in 5 years it had added less than 1/50 of its views it had garnered in its first 144 hours.For Occupy Wall Street, the climb toward the most popular peak of the movement lasted 3 months—from August 2011 to October 2011.There is much speculation on how the movement died off. Rick Cohen suggests that the video "sucked the energy out of the organizing"—people already knew what Kony 2012 was so there was no need to create awareness about it Cohen also makes reference to a "counter-narrative" that arose in Uganda. Ugandans criticized the movement for releasing false information—claiming that the LRA had not had a presence in Uganda since 2006.A parody of the Invisible Children, Inc., the "Visible Children", criticized the non-profit organization for misusing donations and overpaying their employees. The Visible Children also criticized the Kony 2012 movement for making Joseph Kony "famous", citing Ugandan opinions that even more supporters rallied behind Kony for publicity. Delinquent acts of graffiti from the movement's followers and lewd acts by creator Jason Russell led to further criticism of the movement. Finally, the movement's nature as a meme transformed it to be unattractive platform for some to donate.</p>
+			<div id="rapidgrowth"></div>
 			<hr>
 			<h2>LORD'S RESISTANCE ARMY'S RESPONSE</h2>
 			<p>A statement purported to be released by Kony's Lord's Resistance Army rebels and signed by the group's spokesman and negotiator Justine Nyeko ("The Leader, LRA Peace Team") condemned the film as "a cheap and banal panic act of mass trickery to make the unsuspecting peoples of the world complicit in the US rogue and murderous activities in Central Africa." The statement was obtained by Ugandan journalist Frank Nyakairu, received from Nairobi, Kenya-based LRA representatives. It was also reported that the LRA abduction rate sharply increased in the weeks since the film was released, although it was impossible to confirm the link between the rise in LRA attacks and Kony's global notoriety.</p>
@@ -309,5 +311,119 @@
 			</blockquote>
 		</section>
 	</div>
+	<script type="text/javascript">
+			var d3 = Plotly.d3;
+
+			var WIDTH_IN_PERCENT_OF_PARENT = 100,
+			    HEIGHT_IN_PERCENT_OF_PARENT = 70;
+
+			var gd3 = d3.select('#rapidgrowth')
+			    .style({
+			        width: WIDTH_IN_PERCENT_OF_PARENT + '%',
+			        height: HEIGHT_IN_PERCENT_OF_PARENT + 'vh'
+			    });
+
+		var x1 = [];
+		for(i=1; i<+31; i++) {
+			x1.push(i);
+		}
+		var trace1 = {
+		  x: x1,
+		  y: [0.5, 0.5, 0.5, 0.5, 0.5, 3, 100, 99, 56, 30, 18,12,10,8,6,8,16,9,7,5,4,3,3,3,3,2,2,2,2,1,1,1], 
+		  type: 'scatter',
+		  marker: {
+		  color: 'rgb(250, 41, 52)'},
+		  name: 'searches for kony 2012'
+		};
+		var trace2 = {
+			x: x1,
+			y: [0,0,0,0,0,2,61,100,63,33,16,6,5,4,3,3,4,3,3,2,2,2,1,1,1,1,1,1,1,0,0,1],
+			type: 'scatter',
+			marker: {
+			color: 'rgb(28, 169, 223)'},
+			name: 'searches for joseph kony'
+		}
+		var data = [trace1, trace2];
+		var layout = {
+		  title: "Relevant Web Searches in March 2012", 
+		  titlefont: {family: 'Cairo'},
+		  xaxis: { title: "Days in March 2012",
+		  	titlefont: {family: 'Cairo'},
+		  	showline: false,
+		    showgrid: false,
+		    showticklabels: true,
+		    autotick: false,
+		    ticks: 'inside',
+		    ticklen: 10,
+		    tickfont: {
+		      family: 'Cairo',
+		      size: 12,
+		      color: 'black'
+    		}
+    		},
+		  yaxis: {title: "Percentage Interest", titlefont: {family: 'Cairo'}},
+		  autoscale: true
+		};
+		Plotly.newPlot('rapidgrowth', data, layout);
+		window.onresize = function() {
+			    Plotly.Plots.resize('rapidgrowth');
+		};
+
+		var hd3 = d3.select('#map')
+			    .style({
+			        width: WIDTH_IN_PERCENT_OF_PARENT + '%',
+			        height: HEIGHT_IN_PERCENT_OF_PARENT + 'vh'
+			    });
+		var values = [0,0,0,0,0,0,0,0,5,0,0,42,13,0,0,0,0,0,0,6,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,41,0,0,0,16,0,8,0,0,0,0,16,0,9,0,0,0,6,10,0,0,19,17,0,0,0,0,0,0,0,0,0,15,3,0,0,0,0,8,0,0,0,0,0,0,20,0,0,0,0,0,0,20,0,0,4,5,0,0,39,0,0,4,70,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,7,0,39,0,0,0,0,0,17,0,0,0,40,0,0,0,24,4,7,61,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,35,0,0,0,0,0,24,0,5,0,0,0,0,24,9,0,0,0,0,4,0,0,0,100,0,1,0,0,0,0,17,33,42,0,0,0,10,0,0,0,0,0,0];
+		Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_world_gdp_with_codes.csv', function(err, rows){
+		      function unpack(rows, key) {
+		          return rows.map(function(row) { return row[key]; });
+		      }
+
+		       var data = [{
+		            type: 'choropleth',
+		            locationmode: 'world',
+		            locations: unpack(rows, 'CODE'),
+		            z: values,
+		            text: unpack(rows, 'COUNTRY'),
+		            colorscale: [
+		                [0,'#0b799e'],[0.35,'#2196bc'],
+		                [0.5,'#32ACD5'], [0.6,'#4ebbe0'],
+		                [0.7,'#b7edff'],[1,'#eee']],
+		            autocolorscale: false,
+		            reversescale: true,
+		            marker: {
+		                line: {
+		                    color: 'rgb(180,180,180)',
+		                    width: 0.5
+		                }
+		            },
+		            tick0: 0,
+		            zmin: 0,
+		            dtick: 2000,
+		            colorbar: {
+		                autotic: false,
+		                title: '% of total views',
+		                titlefont: {family: 'Cairo'}
+		            }
+		      }];
+
+		      var layout = {
+		          title: 'Popularity of Kony 2012 By Region',
+		          titlefont: {family: 'Cairo'},
+		          geo:{
+		              showframe: false,
+		              showcoastlines: false,
+		              projection:{
+		                  type: 'robinson'
+		              }
+		          }
+		      };
+		      Plotly.plot(map, data, layout, {showLink: false});
+		  });
+		window.onresize = function() {
+			    Plotly.Plots.resize('map');
+		};
+	</script>
 </body>
 </html>
