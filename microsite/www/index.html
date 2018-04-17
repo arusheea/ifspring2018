@@ -22,11 +22,12 @@
 			background-image: url("overlay.jpg");
 			background-color: #bc201b;
 			background-position: bottom;
+			background-size: cover;
 			background-blend-mode: multiply;
 		}
 		#contents {
-			width: 52%;
-			margin: 0 23.6%;
+			width: max-content;
+			margin: 0 auto;
 			margin-top: 29vh;
 		}
 		#icon {
@@ -65,6 +66,7 @@
 			display: inline-block;
 			float: right;
 			margin-top: 10px;
+			margin-left: 10vh;
 		}
 		.icons {
 			display: block;
@@ -72,6 +74,16 @@
 			margin-top: 1px;
 			margin-bottom: 1px;
 			font-size: 1.3em;
+		}
+		@media screen and (max-width: 1200px) {
+			#contents{margin-top: 15vh; box-sizing: border-box;}
+			#icon{display: block; margin: 0 auto;}
+			#logo{margin: 0 auto; margin-top: 4vh; float: none; box-sizing: border-box;}
+		}
+		@media screen and (max-device-width: 1200px) {
+			#contents{margin-top: 15vh; box-sizing: border-box;}
+			#icon{display: block; margin: 0 auto; height: 40vh;}
+			#logo{margin: 0 auto; margin-top: 4vh; float: none; box-sizing: border-box; height: 30vh;}
 		}
 	</style>
 </head>

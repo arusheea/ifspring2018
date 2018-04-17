@@ -154,6 +154,24 @@
 		#neg {
 			background-color: rgba(250, 41, 52, 0.4);
 		}
+		@media screen and (max-width: 1200px) {
+			.comp {flex-direction: column;}
+			.divide {width: 100%;}
+		}
+		@media screen and (max-device-width: 1200px) {
+			.comp {flex-direction: column;}
+			.divide {width: 100%;}
+		}
+		@media screen and (max-width: 1000px) {
+			.outer {display: none;}
+			#contents{width: 70%;}
+			.images {width: 80%; margin: 0 auto; display: block; float: none;}
+		}
+		@media screen and (max-device-width: 1000px) {
+			.outer {display: none;}
+			#contents{width: 70%;}
+			.images {width: 80%; margin: 0 auto; display: block; float: none;}
+		}
 	</style>
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -359,15 +377,14 @@
 		      family: 'Cairo',
 		      size: 12,
 		      color: 'black'
-    		}
     		},
-		  yaxis: {title: "Percentage Interest", titlefont: {family: 'Cairo'}},
+    		fixedrange: true
+    		},
+		  yaxis: {title: "Percentage Interest", titlefont: {family: 'Cairo'},
+    		fixedrange: true},
 		  autoscale: true
 		};
 		Plotly.newPlot('rapidgrowth', data, layout);
-		window.onresize = function() {
-			    Plotly.Plots.resize('rapidgrowth');
-		};
 
 		var hd3 = d3.select('#map')
 			    .style({
@@ -387,14 +404,14 @@
 		            z: values,
 		            text: unpack(rows, 'COUNTRY'),
 		            colorscale: [
-		                [0,'#0b799e'],[0.35,'#2196bc'],
-		                [0.5,'#32ACD5'], [0.6,'#4ebbe0'],
-		                [0.7,'#b7edff'],[1,'#eee']],
+		                [0,'#0b799e'],[0.25,'#2196bc'],
+		                [0.45,'#32ACD5'], [0.6,'#4ebbe0'],
+		                [0.8,'#9EE0F6'],[1,'#ddd']],
 		            autocolorscale: false,
 		            reversescale: true,
 		            marker: {
 		                line: {
-		                    color: 'rgb(180,180,180)',
+		                    color: 'black',
 		                    width: 0.5
 		                }
 		            },
@@ -422,6 +439,7 @@
 		      Plotly.plot(map, data, layout, {showLink: false});
 		  });
 		window.onresize = function() {
+			Plotly.Plots.resize('rapidgrowth');
 			    Plotly.Plots.resize('map');
 		};
 	</script>
