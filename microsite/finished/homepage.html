@@ -249,6 +249,7 @@
 		.dropdown {
 		    float: right;
 		    overflow: hidden;
+		    cursor: pointer;
 		}
 
 		.dropdown .dropbtn {
@@ -261,6 +262,7 @@
 		    background-color: inherit;
 		    font-family: inherit;
 		    margin: 0;
+		    cursor: pointer;
 		}
 
 		.navbar a:active, .dropdown.activedd .dropbtn {
@@ -354,15 +356,20 @@
 		        }
 		    });
 		});
-		$('.dropdown').on('click', function() {
-			if($('.dropdown').length !== 0) {
-				if($('.dropdown')[0].classList.contains('activedd')) {
-					$('.dropdown')[0].classList.remove('activedd');
-				} else {
-					$('.dropdown')[0].classList.add('activedd');
-				}
-			}
-		});
+		if($(window).width() <= 1024) {
+			$('#rapidgrowth').attr('style', 'display: none');
+			$('#map').attr('style', 'display: none');
+			$('#tweet-graph').attr('style', 'display: none');
+			$('.graphimgs').each(function() {
+				$(this).attr('style', 'display: block');
+			});
+			document.getElementsByClassName('outer')[0].classList.add('dropdown-content');
+			document.getElementById('pot-dd').classList.add('dropdown');
+			document.getElementsByClassName('dropbtn')[0].style.display = 'block';
+			$('.right-arrow').each(function() {
+				$(this).attr('style', 'display: none');
+			});
+		}
 	});
 	</script>
 </head>
@@ -671,6 +678,14 @@
 				$('.right-arrow').each(function() {
 					$(this).attr('style', 'display: none');
 				});
+				$('.dropdown').on('click', function() {
+					console.log("reached");
+					if($('.dropdown')[0].classList.contains('activedd')) {
+						$('.dropdown')[0].classList.remove('activedd');
+					} else {
+						$('.dropdown')[0].classList.add('activedd');
+				}
+		});
 			} else {
 				$('#rapidgrowth').attr('style', 'display: block');
 				$('#map').attr('style', 'display: block');
